@@ -1,0 +1,39 @@
+<!-- ======= Section ======= -->
+<section class="licence-list d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <ng-container *ngFor="let item of licenseList; index as i;">
+        <div class="card" style="width: 18rem;">
+          <img src="{{item.logo}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{item.name}}</h5>
+            <p class="card-text">{{item.description | slice: 0:100}} {{item.description.length > 100 ? '...' : ''}}</p>
+            <a [routerLink]="['/application']" class="btn btn-primary me-3">Apply</a>
+            <a (click)="moreInfo(item)" href="#" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">More Info</a>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
+<!-- End  -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{selectedLicense?.name}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {{selectedLicense?.description}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "type": "construction",
+      "name": "Building and Construction Licence",
+      "description": "Building and Construction Licence descriptin Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections ",
+      "logo": "http://localhost:4200/assets/images/construction.jpg"
+    },
+    {
+      "type": "animal-veterinary-service",
+      "name": "Animal & veterinary service Licence",
+      "description": "Animal & veterinary service Licence descriptin Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections ",
+      "logo": "http://localhost:4200/assets/images/animal-vol.jpg"
+    },
+    {
+      "type": "car",
+      "name": "Car Licence",
+      "description": "Car Licence descriptin Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections ",
+      "logo": "http://localhost:4200/assets/images/car.jpg"
+    },
+    {
+      "type": "jewelry",
+      "name": "Jewelry Shop Licence",
+      "description": "Jewelry Shop Licence descriptinLorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections ",
+      "logo": "http://localhost:4200/assets/images/jewelry.jpg"
+    },
+    {
+      "type": "liquor",
+      "name": "Liquor Shop Licence",
+      "description": "Liquor Shop Licence descriptin Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections ",
+      "logo": "http://localhost:4200/assets/images/liquor.jpg"
+    }
+  ]
+}

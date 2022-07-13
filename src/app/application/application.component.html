@@ -1,0 +1,98 @@
+<!-- ======= Section ======= -->
+<section class="create-application">
+  <div class="container">
+    <div>
+      <a [routerLink]="['/home']" class="mb-3">
+        <i class="bi bi-arrow-left-short"></i> Back
+      </a>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="d-flex align-items-center justify-content-center mb-3">
+          <h4 *ngIf="!this.isSuccess">Application Form</h4>
+        </div>
+        <form class="app-form" [formGroup]="appForm" (ngSubmit)="onSubmit()" *ngIf="!this.isSuccess">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input formControlName="applicantName" type="text" class="form-control" id="exampleFormControlInput1"
+              placeholder="Name">
+
+            <label *ngIf="(submitted && appFormControl['applicantName'].invalid)
+            || appFormControl['applicantName'].invalid &&
+            (appFormControl['applicantName'].dirty
+            || appFormControl['applicantName'].touched)" [ngClass]="'alert-danger mt-1'">
+              Name field is required </label>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="NRIC" class="form-label">NRIC</label>
+            <input formControlName="nric" type="text" class="form-control" id="NRIC" placeholder="NRIC">
+
+            <label *ngIf="(submitted && appFormControl['nric'].invalid)
+            || appFormControl['nric'].invalid &&
+            (appFormControl['nric'].dirty
+            || appFormControl['nric'].touched)" [ngClass]="'alert-danger mt-1'">
+              NRIC field is required </label>
+          </div>
+
+          <div class="mb-3">
+            <label for="DateofBirth" class="form-label">Date of Birth</label>
+            <input formControlName="dateOfBirth" type="date" class="form-control" id="DateofBirth"
+              placeholder="Date of Birth">
+
+            <label *ngIf="(submitted && appFormControl['dateOfBirth'].invalid)
+            || appFormControl['dateOfBirth'].invalid &&
+            (appFormControl['dateOfBirth'].dirty
+            || appFormControl['dateOfBirth'].touched)" [ngClass]="'alert-danger mt-1'">
+              Date of Birth field is required </label>
+          </div>
+
+          <div class="mb-3">
+            <label for="Contact Number" class="form-label">Contact Number</label>
+            <input formControlName="contactNumber" type="number" class="form-control" id="contactNumber"
+              placeholder="Contact Number">
+
+            <label *ngIf="(submitted && appFormControl['contactNumber'].invalid)
+            || appFormControl['contactNumber'].invalid &&
+            (appFormControl['contactNumber'].dirty
+            || appFormControl['contactNumber'].touched)" [ngClass]="'alert-danger mt-1'">
+              Contact Number field is required </label>
+          </div>
+
+          <div class="mb-3">
+            <label for="DateofActivity" class="form-label">Date of Activity</label>
+            <input formControlName="dateOfActivity" type="date" class="form-control" id="DateofActivity"
+              placeholder="Date of Activity">
+
+            <label *ngIf="(submitted && appFormControl['dateOfActivity'].invalid)
+            || appFormControl['dateOfActivity'].invalid &&
+            (appFormControl['dateOfActivity'].dirty
+            || appFormControl['dateOfActivity'].touched)" [ngClass]="'alert-danger mt-1'">
+              Date of Activity field is required </label>
+          </div>
+
+          <div class="col-auto mt-5">
+            <button type="reset" class="btn btn-primary me-3">Reset</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+
+        </form>
+
+
+        <div class="card" *ngIf="this.isSuccess">
+          <div class="card-body">
+            <h5 class="card-title text-center pb-2">
+              <i class="bi bi-check-circle-fill"></i>
+            </h5>
+            <p class="card-text text-center pb-2">Application form submitted successfully. </p>
+            <!-- <p class="text-center"><a [routerLink]="['home']" class="btn btn-primary">Ok</a></p> -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End  -->
